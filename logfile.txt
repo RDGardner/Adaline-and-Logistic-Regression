@@ -1,0 +1,423 @@
+INFO:__main__:ETL: Breast Cancer Data Set
+INFO:__main__:ETL: Breast Cancer Data Set
+INFO:__main__:ETL: Breast Cancer Data Set
+INFO:__main__:ETL, Dataframe Info:    id_number  clump_thickness  uniformity_cell_size  uniformity_cell_shape  \
+0    1000025                5                     1                      1   
+1    1002945                5                     4                      4   
+2    1015425                3                     1                      1   
+3    1016277                6                     8                      8   
+4    1017023                4                     1                      1   
+
+   marginal_adhesion  single_epithelial_cell_size  bare_nuclei  \
+0                  1                            2            1   
+1                  5                            7           10   
+2                  1                            2            2   
+3                  1                            3            4   
+4                  3                            2            1   
+
+   bland_chromatin  normal_nucleoli  mitosis  class  
+0                3                1        1      2  
+1                3                2        1      2  
+2                3                1        1      2  
+3                3                7        1      2  
+4                3                1        1      2  
+INFO:__main__:EDA: Breast Cancer Data Set
+INFO:__main__:Descriptive Statistics:        clump_thickness  uniformity_cell_size  uniformity_cell_shape  \
+count       683.000000            683.000000             683.000000   
+mean          4.442167              3.150805               3.215227   
+std           2.820761              3.065145               2.988581   
+min           1.000000              1.000000               1.000000   
+25%           2.000000              1.000000               1.000000   
+50%           4.000000              1.000000               1.000000   
+75%           6.000000              5.000000               5.000000   
+max          10.000000             10.000000              10.000000   
+
+       marginal_adhesion  single_epithelial_cell_size  bare_nuclei  \
+count         683.000000                   683.000000   683.000000   
+mean            2.830161                     3.234261     3.544656   
+std             2.864562                     2.223085     3.643857   
+min             1.000000                     1.000000     1.000000   
+25%             1.000000                     2.000000     1.000000   
+50%             1.000000                     2.000000     1.000000   
+75%             4.000000                     4.000000     6.000000   
+max            10.000000                    10.000000    10.000000   
+
+       bland_chromatin  normal_nucleoli     mitosis       class  
+count       683.000000       683.000000  683.000000  683.000000  
+mean          3.445095         2.869693    1.603221    0.349927  
+std           2.449697         3.052666    1.732674    0.477296  
+min           1.000000         1.000000    1.000000    0.000000  
+25%           2.000000         1.000000    1.000000    0.000000  
+50%           3.000000         1.000000    1.000000    0.000000  
+75%           5.000000         4.000000    1.000000    1.000000  
+max          10.000000        10.000000   10.000000    1.000000  
+INFO:__main__:Pair-Wise Attribute by Class: 0    444
+1    239
+Name: class, dtype: int64
+INFO:__main__:Running Breast Cancer Linear Classification Experiment: Adaline & Logistic Regression
+INFO:__main__:Baseline Accuracy: 0.6500783995674506
+INFO:__main__:Adaline Accuracy: 0.9619572857529061
+INFO:__main__:Logistic Regression Accuracy: 0.9575128413084617
+INFO:__main__:ETL: Glass Data Set
+INFO:__main__:ETL, Dataframe Info:    refractive_index  sodium  magnesium  aluminum  silicon  potassium  calcium  \
+0           1.52101   13.64       4.49      1.10    71.78       0.06     8.75   
+1           1.51761   13.89       3.60      1.36    72.73       0.48     7.83   
+2           1.51618   13.53       3.55      1.54    72.99       0.39     7.78   
+3           1.51766   13.21       3.69      1.29    72.61       0.57     8.22   
+4           1.51742   13.27       3.62      1.24    73.08       0.55     8.07   
+
+   barium  iron  class  
+0     0.0   0.0      1  
+1     0.0   0.0      1  
+2     0.0   0.0      1  
+3     0.0   0.0      1  
+4     0.0   0.0      1  
+INFO:__main__:EDA: Glass Data Set
+INFO:__main__:Descriptive Statistics:        refractive_index      sodium   magnesium    aluminum     silicon  \
+count        214.000000  214.000000  214.000000  214.000000  214.000000   
+mean           1.518365   13.407850    2.684533    1.444907   72.650935   
+std            0.003037    0.816604    1.442408    0.499270    0.774546   
+min            1.511150   10.730000    0.000000    0.290000   69.810000   
+25%            1.516523   12.907500    2.115000    1.190000   72.280000   
+50%            1.517680   13.300000    3.480000    1.360000   72.790000   
+75%            1.519157   13.825000    3.600000    1.630000   73.087500   
+max            1.533930   17.380000    4.490000    3.500000   75.410000   
+
+        potassium     calcium      barium        iron       class  
+count  214.000000  214.000000  214.000000  214.000000  214.000000  
+mean     0.497056    8.956963    0.175047    0.057009    2.780374  
+std      0.652192    1.423153    0.497219    0.097439    2.103739  
+min      0.000000    5.430000    0.000000    0.000000    1.000000  
+25%      0.122500    8.240000    0.000000    0.000000    1.000000  
+50%      0.555000    8.600000    0.000000    0.000000    2.000000  
+75%      0.610000    9.172500    0.000000    0.100000    3.000000  
+max      6.210000   16.190000    3.150000    0.510000    7.000000  
+INFO:__main__:Pair-Wise Attribute by Class: 2    76
+1    70
+7    29
+3    17
+5    13
+6     9
+Name: class, dtype: int64
+INFO:__main__:Running Glass Linear Classification Experiment: Adaline & Logistic Regression
+INFO:__main__:Baseline Accuracy: 0.35548894258196584
+INFO:__main__:Adaline Accuracy: 0.5227079767777443
+INFO:__main__:Logistic Regression Accuracy: 0.49899476492499745
+INFO:__main__:ETL: Iris Data Set
+INFO:__main__:ETL, Dataframe Info:    sepal_length  sepal_width  petal_length  petal_width        class
+0           4.9          3.0           1.4          0.2  Iris-setosa
+1           4.7          3.2           1.3          0.2  Iris-setosa
+2           4.6          3.1           1.5          0.2  Iris-setosa
+3           5.0          3.6           1.4          0.2  Iris-setosa
+4           5.4          3.9           1.7          0.4  Iris-setosa
+INFO:__main__:EDA: Iris Data Set
+INFO:__main__:Descriptive Statistics:        sepal_length  sepal_width  petal_length  petal_width
+count    149.000000   149.000000    149.000000   149.000000
+mean       5.848322     3.051007      3.774497     1.205369
+std        0.828594     0.433499      1.759651     0.761292
+min        4.300000     2.000000      1.000000     0.100000
+25%        5.100000     2.800000      1.600000     0.300000
+50%        5.800000     3.000000      4.400000     1.300000
+75%        6.400000     3.300000      5.100000     1.800000
+max        7.900000     4.400000      6.900000     2.500000
+INFO:__main__:Pair-Wise Attribute by Class: Iris-versicolor    50
+Iris-virginica     50
+Iris-setosa        49
+Name: class, dtype: int64
+INFO:__main__:Running Iris Linear Classification Experiment: Adaline & Logistic Regression
+INFO:__main__:Baseline Accuracy: 0.328735632183908
+INFO:__main__:Adaline Accuracy: 0.8383908045977012
+INFO:__main__:Logistic Regression Accuracy: 0.9664367816091955
+INFO:__main__:ETL: Soybean Data Set
+INFO:__main__:ETL, Dataframe Info:    date  plant-stand  precip  temp  hail  crop-hist  area-damaged  severity  \
+0     5            0       2     1     0          3             1         1   
+1     3            0       2     1     0          2             0         2   
+2     6            0       2     1     0          1             1         1   
+3     4            0       2     1     0          3             0         2   
+4     5            0       2     1     0          2             0         1   
+
+   seed-tmt  germination  ...  stem-cankers  canker-lesion  fruiting-bodies  \
+0         1            2  ...             3              0                1   
+1         1            1  ...             3              0                1   
+2         0            0  ...             3              1                1   
+3         0            2  ...             3              1                1   
+4         1            0  ...             3              1                1   
+
+   external decay  mycelium  int-discolor  sclerotia  fruit-pods  roots  class  
+0               1         0             0          0           0      0     D1  
+1               1         0             0          0           0      0     D1  
+2               1         0             0          0           0      0     D1  
+3               1         0             0          0           0      0     D1  
+4               1         0             0          0           0      0     D1  
+
+[5 rows x 22 columns]
+INFO:__main__:ETL, Dataframe Info, One-Hot Encoding:    class  date_1  date_2  date_3  date_4  date_5  date_6  plant-stand_1  \
+0      0       0       0       0       0       1       0              0   
+1      0       0       0       1       0       0       0              0   
+2      0       0       0       0       0       0       1              0   
+3      0       0       0       0       1       0       0              0   
+4      0       0       0       0       0       1       0              0   
+
+   precip_1  precip_2  ...  canker-lesion_1  canker-lesion_2  canker-lesion_3  \
+0         0         1  ...                0                0                0   
+1         0         1  ...                0                0                0   
+2         0         1  ...                1                0                0   
+3         0         1  ...                1                0                0   
+4         0         1  ...                1                0                0   
+
+   fruiting-bodies_1  external decay_1  mycelium_1  int-discolor_2  \
+0                  1                 1           0               0   
+1                  1                 1           0               0   
+2                  1                 1           0               0   
+3                  1                 1           0               0   
+4                  1                 1           0               0   
+
+   sclerotia_1  fruit-pods_3  roots_1  
+0            0             0        0  
+1            0             0        0  
+2            0             0        0  
+3            0             0        0  
+4            0             0        0  
+
+[5 rows x 38 columns]
+INFO:__main__:EDA: Soybean Data Set
+INFO:__main__:Descriptive Statistics:             date  plant-stand     precip       temp       hail  crop-hist  \
+count  46.000000    46.000000  46.000000  46.000000  46.000000  46.000000   
+mean    2.673913     0.543478   1.478261   0.760870   0.304348   1.739130   
+std     2.055392     0.503610   0.836371   0.672798   0.465215   1.083918   
+min     0.000000     0.000000   0.000000   0.000000   0.000000   0.000000   
+25%     1.000000     0.000000   1.000000   0.000000   0.000000   1.000000   
+50%     3.000000     1.000000   2.000000   1.000000   0.000000   2.000000   
+75%     4.000000     1.000000   2.000000   1.000000   1.000000   3.000000   
+max     6.000000     1.000000   2.000000   2.000000   1.000000   3.000000   
+
+       area-damaged   severity   seed-tmt  germination  ...  stem-cankers  \
+count      46.00000  46.000000  46.000000    46.000000  ...     46.000000   
+mean        1.23913   1.413043   0.500000     1.108696  ...      1.369565   
+std         0.84813   0.497821   0.505525     0.822686  ...      1.040485   
+min         0.00000   1.000000   0.000000     0.000000  ...      0.000000   
+25%         1.00000   1.000000   0.000000     0.000000  ...      1.000000   
+50%         1.00000   1.000000   0.500000     1.000000  ...      1.000000   
+75%         1.00000   2.000000   1.000000     2.000000  ...      2.000000   
+max         3.00000   2.000000   1.000000     2.000000  ...      3.000000   
+
+       canker-lesion  fruiting-bodies  external decay   mycelium  \
+count      46.000000        46.000000       46.000000  46.000000   
+mean        1.717391         0.195652        0.543478   0.108696   
+std         0.910752         0.401085        0.503610   0.314696   
+min         0.000000         0.000000        0.000000   0.000000   
+25%         1.000000         0.000000        0.000000   0.000000   
+50%         2.000000         0.000000        1.000000   0.000000   
+75%         2.000000         0.000000        1.000000   0.000000   
+max         3.000000         1.000000        1.000000   1.000000   
+
+       int-discolor  sclerotia  fruit-pods      roots      class  
+count     46.000000  46.000000   46.000000  46.000000  46.000000  
+mean       0.434783   0.217391    1.760870   0.391304   1.760870  
+std        0.834058   0.417029    1.493464   0.493435   1.158251  
+min        0.000000   0.000000    0.000000   0.000000   0.000000  
+25%        0.000000   0.000000    0.000000   0.000000   1.000000  
+50%        0.000000   0.000000    3.000000   0.000000   2.000000  
+75%        0.000000   0.000000    3.000000   1.000000   3.000000  
+max        2.000000   1.000000    3.000000   1.000000   3.000000  
+
+[8 rows x 22 columns]
+INFO:__main__:Pair-Wise Attribute by Class: 3    17
+2    10
+1    10
+0     9
+Name: class, dtype: int64
+INFO:__main__:Running Soybean Linear Classification Experiment: Adaline & Logistic Regression
+INFO:__main__:Baseline Accuracy: 0.3683333333333333
+INFO:__main__:Adaline Accuracy: 1.0
+INFO:__main__:Logistic Regression Accuracy: 1.0
+INFO:__main__:ETL: Vote Data Set
+INFO:__main__:ETL, Dataframe Info:     class  handicapped-infants  water-project-cost-sharing  \
+5       0                    0                           1   
+8       1                    0                           1   
+19      0                    1                           1   
+23      0                    1                           1   
+25      0                    1                           0   
+
+    adoption-of-the-budget-resolution  physician-fee-freeze  el-salvador-aid  \
+5                                   1                     0                1   
+8                                   0                     1                1   
+19                                  1                     0                0   
+23                                  1                     0                0   
+25                                  1                     0                0   
+
+    religious-groups-in-schools  anti-satellite-test-ban  \
+5                             1                        0   
+8                             1                        0   
+19                            0                        1   
+23                            0                        1   
+25                            0                        1   
+
+    aid-to-nicaraguan-contras  mx-missile  immigration  \
+5                           0           0            0   
+8                           0           0            0   
+19                          1           1            0   
+23                          1           1            0   
+25                          1           1            1   
+
+    synfuels-corporation-cutback  education-spending  superfund-right-to-sue  \
+5                              0                   0                       1   
+8                              0                   1                       1   
+19                             1                   0                       0   
+23                             0                   0                       0   
+25                             0                   0                       0   
+
+    crime  duty-free-exports  export-administration-act-south-africa  
+5       1                  1                                       1  
+8       1                  0                                       1  
+19      0                  1                                       1  
+23      0                  1                                       1  
+25      0                  1                                       1  
+INFO:__main__:ETL, Dataframe Info, One-Hot Encoding:     class  handicapped-infants_1.0  handicapped-infants_nan  \
+5       0                        0                        0   
+8       1                        0                        0   
+19      0                        1                        0   
+23      0                        1                        0   
+25      0                        1                        0   
+
+    water-project-cost-sharing_1.0  water-project-cost-sharing_nan  \
+5                                1                               0   
+8                                1                               0   
+19                               1                               0   
+23                               1                               0   
+25                               0                               0   
+
+    adoption-of-the-budget-resolution_1.0  \
+5                                       1   
+8                                       0   
+19                                      1   
+23                                      1   
+25                                      1   
+
+    adoption-of-the-budget-resolution_nan  physician-fee-freeze_1.0  \
+5                                       0                         0   
+8                                       0                         1   
+19                                      0                         0   
+23                                      0                         0   
+25                                      0                         0   
+
+    physician-fee-freeze_nan  el-salvador-aid_1.0  ...  \
+5                          0                    1  ...   
+8                          0                    1  ...   
+19                         0                    0  ...   
+23                         0                    0  ...   
+25                         0                    0  ...   
+
+    education-spending_1.0  education-spending_nan  \
+5                        0                       0   
+8                        1                       0   
+19                       0                       0   
+23                       0                       0   
+25                       0                       0   
+
+    superfund-right-to-sue_1.0  superfund-right-to-sue_nan  crime_1.0  \
+5                            1                           0          1   
+8                            1                           0          1   
+19                           0                           0          0   
+23                           0                           0          0   
+25                           0                           0          0   
+
+    crime_nan  duty-free-exports_1.0  duty-free-exports_nan  \
+5           0                      1                      0   
+8           0                      0                      0   
+19          0                      1                      0   
+23          0                      1                      0   
+25          0                      1                      0   
+
+    export-administration-act-south-africa_1.0  \
+5                                            1   
+8                                            1   
+19                                           1   
+23                                           1   
+25                                           1   
+
+    export-administration-act-south-africa_nan  
+5                                            0  
+8                                            0  
+19                                           0  
+23                                           0  
+25                                           0  
+
+[5 rows x 33 columns]
+INFO:__main__:EDA: House Votes Data Set
+INFO:__main__:Descriptive Statistics:             class  handicapped-infants  water-project-cost-sharing  \
+count  232.000000           232.000000                  232.000000   
+mean     0.465517             0.413793                    0.461207   
+std      0.499888             0.493577                    0.499571   
+min      0.000000             0.000000                    0.000000   
+25%      0.000000             0.000000                    0.000000   
+50%      0.000000             0.000000                    0.000000   
+75%      1.000000             1.000000                    1.000000   
+max      1.000000             1.000000                    1.000000   
+
+       adoption-of-the-budget-resolution  physician-fee-freeze  \
+count                         232.000000            232.000000   
+mean                            0.530172              0.487069   
+std                             0.500168              0.500913   
+min                             0.000000              0.000000   
+25%                             0.000000              0.000000   
+50%                             1.000000              0.000000   
+75%                             1.000000              1.000000   
+max                             1.000000              1.000000   
+
+       el-salvador-aid  religious-groups-in-schools  anti-satellite-test-ban  \
+count       232.000000                   232.000000               232.000000   
+mean          0.551724                     0.642241                 0.534483   
+std           0.498393                     0.480377                 0.499888   
+min           0.000000                     0.000000                 0.000000   
+25%           0.000000                     0.000000                 0.000000   
+50%           1.000000                     1.000000                 1.000000   
+75%           1.000000                     1.000000                 1.000000   
+max           1.000000                     1.000000                 1.000000   
+
+       aid-to-nicaraguan-contras  mx-missile  immigration  \
+count                 232.000000  232.000000   232.000000   
+mean                    0.512931    0.487069     0.551724   
+std                     0.500913    0.500913     0.498393   
+min                     0.000000    0.000000     0.000000   
+25%                     0.000000    0.000000     0.000000   
+50%                     1.000000    0.000000     1.000000   
+75%                     1.000000    1.000000     1.000000   
+max                     1.000000    1.000000     1.000000   
+
+       synfuels-corporation-cutback  education-spending  \
+count                    232.000000          232.000000   
+mean                       0.344828            0.465517   
+std                        0.476340            0.499888   
+min                        0.000000            0.000000   
+25%                        0.000000            0.000000   
+50%                        0.000000            0.000000   
+75%                        1.000000            1.000000   
+max                        1.000000            1.000000   
+
+       superfund-right-to-sue       crime  duty-free-exports  \
+count              232.000000  232.000000         232.000000   
+mean                 0.547414    0.642241           0.370690   
+std                  0.498823    0.480377           0.484034   
+min                  0.000000    0.000000           0.000000   
+25%                  0.000000    0.000000           0.000000   
+50%                  1.000000    1.000000           0.000000   
+75%                  1.000000    1.000000           1.000000   
+max                  1.000000    1.000000           1.000000   
+
+       export-administration-act-south-africa  
+count                              232.000000  
+mean                                 0.814655  
+std                                  0.389417  
+min                                  0.000000  
+25%                                  1.000000  
+50%                                  1.000000  
+75%                                  1.000000  
+max                                  1.000000  
+INFO:__main__:Pair-Wise Attribute by Class: 0    124
+1    108
+Name: class, dtype: int64
+INFO:__main__:Running House Votes Linear Classification Experiment: Adaline & Logistic Regression
+INFO:__main__:Baseline Accuracy: 0.5345112550107924
+INFO:__main__:Adaline Accuracy: 0.9697420084284099
+INFO:__main__:Logistic Regression Accuracy: 0.9398622674478363
